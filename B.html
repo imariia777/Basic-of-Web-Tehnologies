@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<head>
+    <title>Информационные страницы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navigation {
+            text-align: center;
+        }
+
+        .navigation a {
+            margin: 10px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .numbered-list {
+            list-style-type: decimal;
+        }
+
+        .unordered-list {
+            list-style-type: disc;
+        }
+
+        .nested-list {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .thumbnail-link {
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+
+        table {
+            width: 100%;
+            background-image: url('background.jpg'); /* Замените 'background.jpg' на свой файл */
+            background-size: cover;
+        }
+
+        td {
+            padding: 10px;
+            background-image: url('cell-background.jpg'); /* Замените 'cell-background.jpg' на свой файл */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="#section1">Раздел 1</a>
+        <a href="#section2">Раздел 2</a>
+        <a href="#top">К началу</a>
+    </div>
+
+    <div class="content">
+        <section id="section1">
+            <h2>Раздел 1</h2>
+            <ul class="numbered-list">
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>
+                    <ul class="unordered-list">
+                        <li>Подпункт 1</li>
+                        <li>Подпункт 2</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <img src="image1.jpg" alt="Изображение 1">
+            <p>Пояснение к изображению 1.</p>
+
+            <a href="large_image.jpg" target="_blank">
+                <img src="thumbnail.jpg" alt="Миниатюра большого изображения" class="thumbnail-link">
+            </a>
+        </section>
+
+        <section id="section2">
+            <h2>Раздел 2</h2>
+            <ul class="unordered-list">
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>
+                        <a href="https://www.example.com">Гиперссылка</a>
+                        <img src="image2.jpg" alt="Изображение 2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ячейка 2</td>
+                    <td>
+                        <a href="https://www.example.com">Гиперссылка</a>
+                        <img src="image3.jpg" alt="Изображение 3">
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

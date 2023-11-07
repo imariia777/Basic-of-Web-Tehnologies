@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sportswear</title>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ваш сайт</title>
+</head>
+<body>
+    <!-- Навигационная часть -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Каталог</a></li>
+            <li><a href="#section1">Раздел 1</a></li>
+            <li><a href="#section2">Раздел 2</a></li>
+            <li><a href="#section3">Раздел 3</a></li>
+            <li><a href="https://www.example.com" target="_blank">Внешний сайт</a></li>
+        </ul>
+    </nav>
+
+    <!-- Содержание сайта -->
+    <section id="section1">
+        <h1>Раздел 1</h1>
+        <p>Содержание раздела 1.</p>
+    </section>
+
+    <section id="section2">
+        <h1>Раздел 2</h1>
+        <p>Содержание раздела 2.</p>
+    </section>
+        <section id="section3">
+        <h1>Раздел 3</h1>
+        <p>Содержание раздела 3.</p>
+    </section>
+
+    <!-- Форма для отправки контактных данных -->
+    <section>
+        <h2>Контактные данные</h2>
+        <form action="обработчик.php" method="post">
+            <label for="fname">Фамилия:</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Имя:</label>
+            <input type="text" id="lname" name="lname" required>
+            <label for="phone">Мобильный телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Дата отправки:</label>
+            <input type="date" id="date" name="date" required>
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+
+    <!-- Форма для отправки оригинальных данных -->
+    <section>
+        <h2>Оригинальные данные</h2>
+        <form action="обработчик.php" method="post">
+            <!-- Добавьте поля для ввода оригинальных данных -->
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+</body>
+</html>
+
+</html>
